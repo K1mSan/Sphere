@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="navstyle.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <img src="https://pluspng.com/img-png/mastercard-logo-png--1440.png" alt="">
+                <a href="#"><strong>Sphere</a>
+            </div>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sing Up</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        </div>
+    </nav>
+
+    <section class="home">
+
+    </section>
+    <div clsss="slider">
+        <h1>Slider</h1>
+    </div>
+    <div class="main-container">
+        <div class="heading-container">
+            <h1 class="heading">Gradient Banner Cards</h1>
+        </div>
+        <div class="card-container">
+            <div class="card card-1">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <p class="card__apply"><a href="#">Apply Now <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card card-2">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                <p class="card__apply"><a href="#">Apply Now <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card card-3">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Ut enim ad minim veniam.</h2>
+                <p class="card__apply"><a href="#">Apply Now <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card card-4">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Quis nostrud exercitation ullamco laboris nisi.</h2>
+                <p class="card__apply"><a href="#">Apply Now <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card card-5">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Ut aliquip ex ea commodo consequat. Duis aute irure dolor.</h2>
+                <p class="card__apply"><a href="#">Apply Now <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+            <div class="card card-1">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <p class="card__apply"><a href="#">Apply Now <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+        $(document).ready(function () {
+            $('#login-trigger').click(function () {
+                $(this).next('#login-content').slideToggle();
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+                else $(this).find('span').html('&#x25BC;')
+            })
+        });
+
+        $(document).ready(function () {
+            $('#register-trigger').click(function () {
+                $(this).next('#register-content').slideToggle();
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+                else $(this).find('span').html('&#x25BC;')
+            })
+        });
+    </script>
+
+
+</body>
+
+</html>
