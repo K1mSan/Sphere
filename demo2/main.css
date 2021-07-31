@@ -1,0 +1,83 @@
+body {
+  font-family: 'Niramit', sans-serif; }
+
+header {
+  width: 100%;
+  height: 47px;
+  position: fixed;
+  background-color:#F6DADA;
+  display: flex; 
+}
+header div ul.logo {
+    position: absolute;
+    top: 4px;
+    left: 33px;
+}
+    
+header div ul.me_frame {
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    left: 840px;
+}
+header div ul.explore_frame {
+    position: absolute;
+    top: 7px;
+    left: 931px;
+  
+}
+
+   
+   
+      
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 100px; 
+}
+header nav ul li a {
+    display: inline-block;
+}
+header nav ul li.me a {
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 925px;
+}
+header nav ul li.explore a {
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 988px;
+}
+          
+h2{
+    text-align: center;
+    padding-top: 20px;
+}
+.menu-logo{
+    padding-top: 10px;
+    padding-bottom: 30px ;
+}
+.menu-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.menu-logo img.first-logo{
+    margin-left: 43%;
+    margin-right: 30px;
+}
+.menu-logo img.third-logo{
+    margin-left: 30px;
+}
+
+.card-group{
+    margin: 0px 20px 0px 20px;
+}
