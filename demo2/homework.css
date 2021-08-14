@@ -1,0 +1,121 @@
+body {
+    font-family: 'Niramit', sans-serif; 
+    background-color: gainsboro;
+}
+
+header {
+    width: 100%;
+    height: 47px;
+    position: fixed;
+    background-color:#F6DADA;
+    display: flex; 
+   }
+header div ul.logo {
+    position: absolute;
+    top: 4px;
+    left: 33px;
+}
+    
+header div ul.me_frame {
+    position: absolute;
+    top: 7px;
+    left: 840px;
+}
+
+header div ul.explore_frame {
+    position: absolute;
+    top: 7px;
+    left: 840px;
+  
+}
+ 
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 100px; }
+header nav ul li a {
+    display: inline-block;
+}
+header nav ul li.me a {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 925px;}
+header nav ul li.explore a {
+    color:black;
+    position: absolute;
+    top: 10px;
+    left: 988px;}
+
+.menu-bar{
+    display: flex;
+    position: relative;
+    top:90px;
+    justify-content: center;
+    
+
+}
+.menu-bar section{
+    display:inline-flex;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    height: 50px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: white;
+
+}
+
+.menu-bar section p a {
+    position: relative;
+    padding: 6px 20px 10px 20px;
+    color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+
+}
+
+.menu-bar section p a:hover {
+    background-color: rgb(135, 178, 235);
+    color: white;
+}
+
+.container{
+    position: relative;
+    width:100%;
+    height:550px;
+    border-style: solid;
+    border-color: rgb(10, 96, 194);
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #F6DADA;
+    padding: 20px 20px 20px 20px;
+    margin-top:10%;
+}
+
+.homework{
+    font-size: 20px;
+}
+
+.submit{
+    float: right;
+    margin-top: -130px;
+    
+}
+.submit p{
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: rgb(200, 255, 127);
+
+}
